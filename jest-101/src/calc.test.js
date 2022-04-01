@@ -1,13 +1,9 @@
-var add = require('./calc')
+import {add} from './calc';
 
-describe('caculator', () => {
-    describe('should perform addition', () => {
-        it('add two positive numbers', () => {});
-        it('add two negative numbers', () => {});
-        it('adds a positive and a negative numbers', () => {});
+describe('calculator', () => {
+
+    it('add two numbers', () => {
+        expect(add(1, 2)).toBe(3);
     });
-    
-    it('should perform subtraction', () => {});
-    it('should perform multiplication', () => {});
-    it('should perform division', () => {});
+
 });
